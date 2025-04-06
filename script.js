@@ -47,11 +47,11 @@ modifiedClone.courses = allCourses;
 console.log(modifiedClone); 
 
 //logs for part 5
-student.addCourse("Python"); //Tadd a course
-console.log("Total courses:", student.courseCount()); //count the number of courses  
-student.addCourse("Java"); //Add anouther
-console.log("Total courses:", student.courseCount()); //count again
+student.addCourse("Python");
+console.log("Total courses:", student.courseCount()); 
+student.addCourse("Java");
+console.log("Total courses:", student.courseCount());
 
 //Bonus Task
-const sum = scores.reduce((accumulator, currentValue) => accumulator + currentValue, 0); //Adds all the scores
-console.log('Average: ' + (sum/student.courseCount())); // gets scores total and divides it by the amount of classes
+const sum = scores.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log('Average: ' + (sum/student.courseCount()));
