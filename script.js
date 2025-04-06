@@ -35,3 +35,13 @@ const allCourses = [...student.courses, ...newCourses]; // Using spread operator
 console.log(allCourses); // Logging the combined array
 modifiedClone.courses = allCourses; // Assigning the combined array to the student object
 console.log(modifiedClone); // Logging the updated courses array
+
+//Part 5:Object Methods
+function addCourse(course) {
+    this.courses.push(course); // Adding a course to the courses array
+}
+console.log(student.courses);
+addCourse.call(student, "Python"); //Adding a course
+console.log(student.courses);
+console.log(student);
+ //Upadtreed course array
