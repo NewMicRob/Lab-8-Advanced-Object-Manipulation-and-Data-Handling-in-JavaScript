@@ -26,3 +26,7 @@ console.log(courses); // Logging the courses
 const scores = [85, 92, 78, 90]; // Array of scores
 const [firstScore, secondScore] = scores; // Destructuring array
 console.log(firstScore, secondScore); // logging the first and second scores
+
+//Part 4: The spread operator
+const studentClone = { ...student }; // Using spread operator to copy the student object
+console.log(studentClone); // Logging the copied object
