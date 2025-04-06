@@ -15,11 +15,10 @@ let student = {
     },
     //Part 5.2
     courseCount: function() {
-        return this.courses.length; s
+        return this.courses.length;
     }
 };
 student.studentInfo(); 
-
 
 //Part 2: Working with JSON
 let jsonString = '{"name": "jeff", "age": 20, "enrolled": true, "courses": ["Algo", "JavaScript", "Web Dev", "Writ", "OS", "Databases"]}'; 
@@ -48,7 +47,11 @@ modifiedClone.courses = allCourses;
 console.log(modifiedClone); 
 
 //logs for part 5
-student.addCourse("Python"); //To add a course
-console.log("Total courses:", student.courseCount()); //count the number og courses
+student.addCourse("Python"); //Tadd a course
+console.log("Total courses:", student.courseCount()); //count the number of courses  
 student.addCourse("Java"); //Add anouther
 console.log("Total courses:", student.courseCount()); //count again
+
+//Bonus Task
+const sum = scores.reduce((accumulator, currentValue) => accumulator + currentValue, 0); //Adds all the scores
+console.log('Average: ' + (sum/student.courseCount())); // gets scores total and divides it by the amount of classes
