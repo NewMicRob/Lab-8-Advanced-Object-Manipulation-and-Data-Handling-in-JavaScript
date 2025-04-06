@@ -8,7 +8,6 @@ let student = { // Creating an object student
         console.log('Name: ' + this.name + '\n' + 'Age: ' + this.age); // the output
     }
 };
-
 student.studentInfo(); // Calling the studentInfo method
 
 //Part 2: Working with JSON
@@ -18,7 +17,6 @@ let jsonObject = JSON.parse(jsonString); // Pback inot an object
 console.log(jsonObject); // Logging the json object
 
 //Part 3: Using destructuring assignment
-
 const { name, courses } = student; // Destructuring the student object
 console.log(name); // Logging the name
 console.log(courses); // Logging the courses
@@ -29,4 +27,6 @@ console.log(firstScore, secondScore); // logging the first and second scores
 
 //Part 4: The spread operator
 const studentClone = { ...student }; // Using spread operator to copy the student object
+const modifiedClone = { ...studentClone, GraduationYear: 2026}; // Modifying the copied object
 console.log(studentClone); // Logging the copied object
+console.log(modifiedClone); // Logging the modified cone object
