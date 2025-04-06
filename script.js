@@ -20,6 +20,9 @@ console.log(jsonObject); // Logging the json object
 //Part 3: Using destructuring assignment
 
 const { name, courses } = student; // Destructuring the student object
-
 console.log(name); // Logging the name
 console.log(courses); // Logging the courses
+
+const scores = [85, 92, 78, 90]; // Array of scores
+const [firstScore, secondScore] = scores; // Destructuring array
+console.log(firstScore, secondScore); // logging the first and second scores
