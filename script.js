@@ -18,3 +18,8 @@ let jsonObject = JSON.parse(jsonString); // Pback inot an object
 console.log(jsonObject); // Logging the json object
 
 //Part 3: Using destructuring assignment
+
+const { name, courses } = student; // Destructuring the student object
+
+console.log(name); // Logging the name
+console.log(courses); // Logging the courses
